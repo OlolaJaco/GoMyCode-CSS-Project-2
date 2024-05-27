@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yummy Restoran</title>
+  
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" 
+  />
+  
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+  />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/mug-hot-solid.svg">
+ 
+</head>
+
+<body>
+  <div class="overall">
+    <header>
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">
+            <i class="fa-solid fa-bowl-rice logo" style="color: #fea116"></i> <span> Yummy Restoran </span>
+          </a>
+          <div class="offcanvas offcanvas-end topbar" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <i class="fa-solid fa-bowl-rice" style="color: #FFD43B;"></i> <span> Yummy Restoran </span>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="color: #fea116;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">SERVICE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#menu">MENU</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Booking</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Our Team</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Testimonial</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact">CONTACT</a>
+                </li>
+              </ul>
+              <a href="" class="book-button book-1">BOOK A TABLE</a>
+            </div>
+          </div>
+          <a href="" class="book-button">BOOK A TABLE</a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-light"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container text-center text-white">
+          <div class="row align-items-center">
+            <div class="col-6 d-flex hero-text flex-column align-items-center justify-content-center">
+              <h1><strong>Enjoy Our Delicious Meal</strong></h1>
+              <p>It was time to get rid of the vines. Oh God, let it be God's pain. Some backyard will be backyard and them. There was a great deal of pain and suffering, but it was a great deal of pain</p>
+            </div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Service Start -->
+      <section id="service" >
+        <div class="container py-5 service">
+          <div class="row text-center">
+            <div class="col-lg-3"> 
+              <i class="fa-solid fa-user-tie fa-2xl" style="color: #fea116"></i>
+              <h2>Master Chefs</h2>
+              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+
+            <div class="col-lg-3">
+              <i class="fa-solid fa-bowl-rice logo fa-2xl" style="color: #fea116"></i>
+              <h2>Quality Food</h2>
+              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+
+            <div class="col-lg-3">
+              <i class="fa-solid fa-cart-arrow-down fa-2xl" style="color: #fea116"></i>
+              <h2>Online Order</h2>
+              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+
+            <div class="col-lg-3">
+              <i class="fa-solid fa-headset fa-2xl" style="color: #fea116"></i>
+              <h2>24/7 Service</h2>
+              <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about">
+
+        <div class="container py-5 text-center">
+          <div class="row">
+            <div class="col-lg-6">
+             <img src="about-1.jpg" width="150px" alt="about image 1">
+              <img src="about-2.jpg" width="150px" alt="about image 2">
+              
+                  
+              <div class="w-100 my-2" ></div>
+              
+              <img class="m-1" src="about-3.jpg" width="200" alt="">
+              <img src="about-4.jpg" width="200" alt="">
+            </div>
+
+            <div class="col-lg-6">
+              <h3 style="font-family: 'Times New Roman', Times, serif; color: #fea116;" >About us...</h3>
+              <h2>Welcome to Yummy <i class="fa-solid fa-bowl-rice logo" style="color: #fea116"></i> Restoran </h2>
+             <p>It was time to get rid of the vines. Oh God, let it be God's pain. There was a lot of drama and they were the same, but the story was still there.</p>
+
+            <p>It was time to get rid of the vines. Oh God, let it be God's pain. Some backyard will be backyard and them. There was a great deal of pain in the two parts of the body</p>
+            <a href="" class="book-button">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Menu -->
+      <section id="menu">
+        <div class="container py-5 text-center">
+          <div class="row py-3">
+           <div class="col-lg-3">
+            <div class="card">
+              <img src="menu-1.jpg" alt="Menu 1">
+              <div class="card-body">
+                <h4>Chicken Burger</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h6>$115</h6>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-lg-3">
+            <div class="card">
+              <img src="menu-2.jpg" alt="Menu 1">
+              <div class="card-body">
+                <h4>Chicken Burger</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h6>$115</h6>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-lg-3">
+            <div class="card">
+              <img src="menu-3.jpg" alt="Menu 1">
+              <div class="card-body">
+                <h4>Chicken Burger</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h6>$115</h6>
+              </div>
+            </div>
+           </div>
+
+           <div class="col-lg-3">
+            <div class="card">
+              <img src="menu-4.jpg" alt="Menu 1">
+              <div class="card-body">
+                <h4>Chicken Burger</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h6>$115</h6>
+              </div>
+            </div>
+           </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="menu-5.jpg" alt="Menu 1">
+                <div class="card-body">
+                  <h4>Chicken Burger</h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h6>$115</h6>
+                </div>
+              </div>
+             </div>
+
+             <div class="col-lg-3">
+              <div class="card">
+                <img src="menu-6.jpg" alt="Menu 1">
+                <div class="card-body">
+                  <h4>Chicken Burger</h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h6>$115</h6>
+                </div>
+              </div>
+             </div>
+
+             <div class="col-lg-3">
+              <div class="card">
+                <img src="menu-7.jpg" alt="Menu 1">
+                <div class="card-body">
+                  <h4>Chicken Burger</h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h6>$115</h6>
+                </div>
+              </div>
+             </div>
+
+             <div class="col-lg-3">
+              <div class="card">
+                <img src="menu-8.jpg" alt="Menu 1">
+                <div class="card-body">
+                  <h4>Chicken Burger</h4>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h6>$115</h6>
+                </div>
+              </div>
+             </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col-4">
+              <img src="video.jpg" width="100%" height="100%" alt="contact video image">
+            </div>
+            <div class="col-8 contact">
+              <div class="row pt-2">
+                <h4>Table Reservation</h4>
+                <h1>Book A Table Online</h1>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="Full Name" name="name" id="name">
+                </div>
+                <div class="col-6">
+                  <input type="email" class="form-control" placeholder="Your Email" name="email" id="email">
+                </div>
+                <div class="row my-1">
+                  <div class="col-6">
+                    <input type="datetime" class="form-control" placeholder="Date & Time" name="date" id="date">
+                  </div>
+                  <div class="col-6">
+                    <input type="number" class="form-control" placeholder="Number of People" name="number" id="number">
+                  </div>
+                </div>
+                <div class="row m-1 mb-2">
+                  <textarea name="request" class="form-control" id="request" placeholder="Special Request" rows="3"></textarea>
+                </div>
+                <a href="" class="book-button">Read More</a>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container my-5 footer">
+        <div class="col-lg-11">
+          <div class="row">
+            <div class="col-3">
+              <h4>Company</h4>
+              <p><i class="fa-solid fa-angle-right"></i> About Us</p>
+              <p><i class="fa-solid fa-angle-right"></i> Contact Us</p>
+              <p><i class="fa-solid fa-angle-right"></i> Reservation</p>
+              <p><i class="fa-solid fa-angle-right"></i> Privacy Policy</p>
+              <p><i class="fa-solid fa-angle-right"></i> Terms & Condition</p>
+            </div>
+            <div class="col-3">
+              <h4>Contact</h4>
+              <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+              <p><i class="fa-solid fa-phone"></i> +234 9031 779 869</p>
+              <p><i class="fa-solid fa-envelope"></i> ololajaco@gmail.com</p>
+              <p>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i> 
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i> 
+              </p>
+            </div>
+            <div class="col-3">
+              <h4>Opening</h4>
+              <p>Sunday - Saturday 09AM - 09PM </p>
+              <p>Sunday 10AM - 08PM</p>
+            </div>
+            <div class="col-3">
+              <h4>NewsLetter</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Bootstrap Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>

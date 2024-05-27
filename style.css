@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+}
+
+nav {
+    background-color: #0f172b;
+}
+a span, h5 span {
+    color: #fea116;
+    
+}
+.topbar {
+    background-color: #0f172b;
+}
+
+.book-button {
+    background-color: #fea116;
+    color: white;
+    padding: 10px   20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.book-button:hover {
+    background-color: #fab040;
+}
+
+.navbar-toggler, .btn-close {
+    border: none;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link {
+    color: white;
+    position: relative;
+}
+
+.nav-link:hover, nav-link:active {
+    color: #fea116;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #fea116;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+    .book-1 {
+        visibility: hidden;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hero-section {
+    background-image: url(bg-hero.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-section::before {
+    background-color: #00000099;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-text, .book-2 {
+    margin-top: 10%;
+    z-index: 1;
+    position: relative;
+}
+
+.book-2 {
+    width: 30%;
+}
+
+.hero-text h1 {
+    font-size: 4em;
+}
+
+.service {
+    box-shadow: 3px 1px 6px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 1px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 1px 6px 0px rgba(0,0,0,0.75);
+}
+
+.card h6 {
+    color: grey;
+}
+
+.col h4 {
+    color: #fea116;
+}
+
+.contact {
+    background-color: #0f172b ;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact h4 {
+    color: #fea116;
+}
+
+footer {
+    background-color: #0f172b;
+    color: #fff;
+    height: 200px;
+}
+
+.footer h4 {
+    color: #fea116;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
